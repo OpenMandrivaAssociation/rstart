@@ -46,7 +46,7 @@ rm -rf %{buildroot}
 %{_libdir}/X11/rstart/contexts/default
 %{_libdir}/X11/rstart/contexts/@List
 %{_libdir}/X11/rstart/contexts/x11r6
-%{_mandir}/man1/rstartd.1x.bz2
-%{_mandir}/man1/rstart.1x.bz2
+%{_mandir}/man1/rstartd.*
+%{_mandir}/man1/rstart.*
 
 
