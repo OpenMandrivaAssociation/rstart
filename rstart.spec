@@ -1,14 +1,14 @@
 Name: rstart
 Version: 1.0.2
-Release: %mkrel 2
+Release: %mkrel 3
 Summary: A sample implementation of a Remote Start rsh helper
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License: MIT
 BuildRoot: %{_tmppath}/%{name}-root
 
-BuildRequires: libx11-devel >= 1.0.0
-BuildRequires: x11-util-macros >= 1.0.1
+BuildRequires: x11-util-macros	>= 1.1.5
+BuildRequires: libx11-devel	>= 1.1.3
 
 %description
 Rstart is a simple implementation of a Remote Start client as defined in "A
@@ -48,5 +48,3 @@ rm -rf %{buildroot}
 %{_libdir}/X11/rstart/contexts/x11r6
 %{_mandir}/man1/rstartd.*
 %{_mandir}/man1/rstart.*
-
-
