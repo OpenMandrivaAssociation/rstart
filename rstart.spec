@@ -1,6 +1,6 @@
 Name: rstart
 Version: 1.0.3
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: A sample implementation of a Remote Start rsh helper
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
