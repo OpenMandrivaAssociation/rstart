@@ -18,6 +18,8 @@ underlying remote execution mechanism.
 %setup -q -n %{name}-%{version}
 
 %build
+libtoolize --copy --force
+autoreconf -fi
 %configure2_5x	--x-includes=%{_includedir}\
 		--x-libraries=%{_libdir}
 
