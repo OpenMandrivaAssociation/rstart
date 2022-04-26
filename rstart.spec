@@ -1,11 +1,11 @@
 Summary:	A sample implementation of a Remote Start rsh helper
 Name:		rstart
-Version:	1.0.5
-Release:	13
+Version:	1.0.6
+Release:	1
 Group:		Development/X11
 License:	MIT
 Url:		http://xorg.freedesktop.org/releases/individual/app
-Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xorg-macros)
 
@@ -15,17 +15,17 @@ Flexible Remote Execution Protocol Based on rsh". It uses rsh as its
 underlying remote execution mechanism.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
-%configure2_5x \
+%configure \
 	--x-includes=%{_includedir}\
 	--x-libraries=%{_libdir}
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/rstartd
@@ -43,6 +43,5 @@ underlying remote execution mechanism.
 %{_libdir}/X11/rstart/contexts/x11r6
 %{_libdir}/X11/rstart/*/x11
 %{_libdir}/X11/rstart/*/x
-%{_mandir}/man1/rstartd.*
-%{_mandir}/man1/rstart.*
-
+%doc %{_mandir}/man1/rstartd.*
+%doc %{_mandir}/man1/rstart.*
