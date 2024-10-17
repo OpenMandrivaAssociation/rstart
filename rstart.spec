@@ -4,7 +4,7 @@ Version:	1.0.6
 Release:	2
 Group:		Development/X11
 License:	MIT
-Url:		http://xorg.freedesktop.org/releases/individual/app
+Url:		https://xorg.freedesktop.org/releases/individual/app
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xorg-macros)
