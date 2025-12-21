@@ -6,6 +6,11 @@ Group:		Development/X11
 License:	MIT
 Url:		https://xorg.freedesktop.org/releases/individual/app
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xorg-macros)
 
